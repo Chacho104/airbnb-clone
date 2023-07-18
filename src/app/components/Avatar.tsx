@@ -8,7 +8,7 @@ type AvatarProps = {};
 
 const Avatar: React.FC<AvatarProps> = () => {
   return (
-    <div className="flex flex-row w-full items-center justify-between py-1 px-3 gap-3">
+    <div className="flex w-full flex-row items-center justify-between gap-3 px-3 py-1">
       <AiOutlineMenu />
       <Image
         alt="Avatar"

@@ -13,29 +13,29 @@ const UserMenu: React.FC = () => {
   }, []);
 
   return (
-    <div className="hidden md:flex flex-row items-center">
+    <div className="hidden flex-row items-center md:flex">
       <div
         onClick={() => {}}
-        className="text-sm font-semibold p-3 rounded-full hover:bg-neutral-100 transition cursor-pointer"
+        className="cursor-pointer rounded-full p-3 text-sm font-semibold transition hover:bg-neutral-100"
       >
         Airbnb your home
       </div>
-      <div className="py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer">
+      <div className="cursor-pointer rounded-full px-4 py-3 transition hover:bg-neutral-100">
         <FiGlobe size={18} />
       </div>
       <div
         onClick={toggleOpen}
-        className="rounded-full border-[1px] ml-2 hover:shadow-md transition cursor-pointer"
+        className="ml-2 cursor-pointer rounded-full border-[1px] transition hover:shadow-md"
       >
         <Avatar />
       </div>
       {isOpen && (
-        <div className="absolute rounded-xl shadow-lg bg-white overflow-hidden w-[250px] right-4 xl:right-20 md:right-5 sm:right-2 top-20 text-sm">
-          <div className="flex flex-col cursor-pointer border-b-[1px] py-1">
+        <div className="absolute right-4 top-20 w-[250px] overflow-hidden rounded-xl bg-white text-sm shadow-lg sm:right-2 md:right-5 xl:right-20">
+          <div className="flex cursor-pointer flex-col border-b-[1px] py-1">
             <MenuItem onClick={() => {}} label="Sign up" />
             <MenuItem onClick={() => {}} label="Log in" />
           </div>
-          <div className="flex flex-col cursor-pointer py-1">
+          <div className="flex cursor-pointer flex-col py-1">
             <MenuItem onClick={() => {}} label="Airbnb your home" />
             <MenuItem onClick={() => {}} label="Help" />
           </div>

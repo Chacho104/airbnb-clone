@@ -11,7 +11,7 @@ const Logo: React.FC = () => {
       height={100}
       width={100}
       src="/images/logo.png"
-      className="hidden md:block cursor-pointer"
+      className="hidden cursor-pointer md:block"
     />
   );
 };

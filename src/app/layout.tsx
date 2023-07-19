@@ -2,6 +2,7 @@ import { Nunito } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
+import StartAuthModal from "./components/modals/StartAuthModal";
 
 export const metadata = {
   title: "Vacation Homes & Condo Rentals",
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <StartAuthModal />
         <Navbar />
         {children}
       </body>
